@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/* 1. 共通設定 */
+body {
+    font-family: "Oswald", sans-serif;
+    color: black;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+.space {
+    height: 80px;
+    visibility: hidden;
+}
+
+/* ヘッダーとナビバー */
+.customNavbar {
+    background-color: rgb(27.5, 27.5, 27.5);
+    padding: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background-color: #fff;
+    color: #111 !important;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    transform: scale(1.05);
+}
+.nav-item a {
+    display: flex;
+}
+
+/* ロゴ */
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+/* スライダー背景 */
+.swiperBackImg {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+.swiper {
+    width: 90vw;
+    height: 100%;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* セクション共通タイトル */
+.aboutTitle,
+.mapTitle,
+.galleryTitle,
+.getInTouch {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+
+.aboutTitle::after,
+.mapTitle::after,
+.galleryTitle::after,
+h3.getInTouch::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #ff5722;
+    display: block;
+    margin: 10px auto 0;
+}
+
+/* Aboutセクション */
+.about {
+    margin: 0 auto;
+    width: 90%;
+}
+.contain {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* 縦軸の中央揃え */
+}
+.portrait {
+    width: 700px;
+    max-height: 600px;
+    object-fit: cover;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.about .text {
+    color: #fff;
+    margin: 30px;
+    padding: 25px;
+    background-color: rgba(128, 128, 128);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.about h2 {
+    font-size: 80px;
+}
+.about p {
+    font-size: 20px;
+}
+/* マップのやつ */
+.map-description {
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.map-frame {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.map-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* ギャラリー */
+.gallery img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    /* hover時に滑らかな動きになる↓*/
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.more {
+    background-color: #ff5722;
+    color: white;
+    padding: 0.6rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: none;
+    transition: 0.3s;
+    font-family: "Oswald", sans-serif;
+}
+.more:hover {
+    background-color: #c02f02;
+}
+.more a {
+    text-decoration: inherit;
+    color: inherit;
+}
+.more a:hover {
+    color: inherit;
+}
+
+/* コンタクトのcss */
+.contact {
+    margin: 300px auto 200px auto;
+    padding: 80px;
+    background-color: rgba(45, 44, 44, 0.7);
+}
+.lastImg {
+    height: 1300px;
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.279) 70%,
+            white 90%
+        ),
+        url("../images/marius-christensen-tVhueFPfd1w-unsplash.jpg");
+    background-size: cover;
+}
+.info {
+    font-size: x-large;
+}
+
+.info h3 {
+    color: aliceblue;
+}
+.info a {
+    color: rgb(255, 225, 0);
+    transition: color 0.5s ease;
+}
+.info a:hover {
+    color: rgb(235, 70, 70);
+}
+.info p {
+    color: rgb(255, 225, 0);
+    border-bottom: 1px solid rgb(255, 225, 0);
+}
+.spaceContent {
+    height: 100px;
+    visibility: hidden;
+}
+
+/* footerのCSS */
+footer img {
+    filter: grayscale(40%);
+    max-width: 180px;
+    height: auto;
+}
+footer a {
+    color: inherit; /* 親要素と同じ色にする（または任意の色に変更） */
+    text-decoration: none; /*下線をなくす */
+}
+
+/* メディアクエリ：スマホ対応 */
+@media (max-width: 1190px) {
+    .about {
+        width: 95%;
+    }
+}
+@media (max-width: 1060px) {
+    /* about用 */
+    .contain {
+        flex-direction: column;
+        text-align: center;
+        padding: 5% 3%;
+        flex-direction: column;
+    }
+
+    .portrait {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-left: none !important;
+        border-right: none !important;
+        order: 2;
+    }
+    .about img {
+        margin: 0;
+    }
+
+    .about .text {
+        width: 90%;
+        margin: 10px 10px;
+        padding: 20px;
+        order: 1;
+    }
+
+    .about h2 {
+        font-size: 40px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 992px) {
+    /* top用 */
+    .swiperBackImg {
+        height: 80%;
+        width: 100%;
+    }
+}
