@@ -243,6 +243,7 @@ footer a {
         width: 100%;
         max-width: 100%;
         height: auto;
+        max-height: 200px;
         border-left: none !important;
         border-right: none !important;
         order: 2;
@@ -259,11 +260,20 @@ footer a {
     }
 
     .about h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .about p {
-        font-size: 16px;
+        font-size: 13px;
+    }
+
+    /* contact用 */
+    .contact {
+        padding: 8px;
+        margin: 80px auto 30px auto;
+    }
+    .lastImg {
+        height: 700px;
     }
 }
 @media (max-width: 992px) {
@@ -271,5 +281,28 @@ footer a {
     .swiperBackImg {
         height: 80%;
         width: 100%;
+    }
+    .map-section {
+        padding: 20px;
+    }
+}
+@media (max-width: 500px) {
+    /* navbar用 */
+    .logo {
+        width: 60px;
+    }
+    .nav-link {
+        margin: 0.2rem 0;
+        padding: 0;
+    }
+    /* swiper用 */
+    .swiper {
+        width: 100vw;
+        height: 250px;
+    }
+    /* footer用 */
+    .address p {
+        margin: 5px 8px;
+        padding: 0;
     }
 }
