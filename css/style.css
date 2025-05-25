@@ -187,7 +187,7 @@ h3.getInTouch::after {
             rgba(0, 0, 0, 0.279) 70%,
             white 90%
         ),
-        url("../images/marius-christensen-tVhueFPfd1w-unsplash.jpg");
+        url("../images/contact_bg.jpg");
     background-size: cover;
 }
 .info {
