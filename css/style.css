@@ -243,9 +243,7 @@ footer a {
         width: 100%;
         max-width: 100%;
         height: auto;
-        max-height: 200px;
-        border-left: none !important;
-        border-right: none !important;
+        max-height: 500px;
         order: 2;
     }
     .about img {
@@ -260,11 +258,11 @@ footer a {
     }
 
     .about h2 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .about p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     /* contact用 */
@@ -286,7 +284,12 @@ footer a {
         padding: 20px;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 750px) {
+    .portrait {
+        max-height: 350px;
+    }
+}
+@media (max-width: 550px) {
     /* navbar用 */
     .logo {
         width: 60px;
@@ -299,6 +302,16 @@ footer a {
     .swiper {
         width: 100vw;
         height: 250px;
+    }
+    .portrait {
+        max-height: 220px;
+    }
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 12px;
     }
     /* footer用 */
     .address p {
